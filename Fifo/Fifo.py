@@ -6,9 +6,6 @@
 # Tema: Simulador de Escalonador FIFO
 # Criar um simulador de escalonamento estilo FIFO, que simule por prioridades.
 
-'''Ficou faltando terminar a lógica de quando finalizar um processo ele ir para lista de finalizados'''
-'''Ficou faltando terminar a lógica de colocar um processo em execução'''
-
 conttempocorrente = 0
 tempocorrente = 0
 contprocesso = 0
@@ -71,6 +68,7 @@ while conttempocorrente < tempototal:
   print("Lista de Execução por Prioridade: ", prioridade)
   print("Lista de Finalizados: ", finalizados() )
   print("-----------------------------------------")
+  
   print("O processo # ", escalonado(), " foi escalonado \n") 
 
 print("O Simulador terminou toda sua execução!")
