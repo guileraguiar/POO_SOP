@@ -66,6 +66,22 @@ print("========================")
 for i in range(0,tamanhomemoria):
     print(memoria[i], end="|")
 
+'''for i in range(0,20):
+    print(memoria[i], end="|")
+print()
+for i in range(20,40):
+    print(memoria[i], end="|")
+print()
+for i in range(40,60):
+    print(memoria[i], end="|")
+print()
+for i in range(60,80):
+    print(memoria[i], end="|")
+print()
+for i in range(80,100):
+    print(memoria[i], end="|")
+print()'''
+
 while(opcao != 4):
     #Menu do programa
     print("\n1 - First-Fit")
@@ -182,6 +198,7 @@ while(opcao != 4):
                     break
         else:
             if(opcao == 3):
+              for i in range(0, tamanhocolecao):
                 #Implemente aqui a lógica da pior escolha
                 #Para fazermos a lógica da pior escolha, é necessário criarmos variáveis de posições e nisso fazer o inicio e fim para calcular o tamanho de cada buraco, e tentar através do algoritmo, achar no meio sortido o maior espaço sufiente para suportar o tamanho da informação que será alocada na memória
                 posicao1 = 0
@@ -200,7 +217,7 @@ while(opcao != 4):
                         inicio = posicao1
                         posicao2 = inicio + 1
                         #usaremos um outro while para encontrar o final do buraco, subtraindo o fim do inicio para encontrar o tamanho total.
-                        while(posicao2 < 100):
+                        while(posicao2 < tamanhomemoria):
                             #Quando a memória for diferente de "vazio", o programa entende que é o fim do buraco, fazendo o calculo par asaber o tamanho.
                             if memoria[posicao2] != ' ':
                                 fim = posicao2
@@ -230,3 +247,19 @@ while(opcao != 4):
     # Aqui você deve imprimir todo o conteúdo da variável memória
     for i in range(0,tamanhomemoria):
         print(memoria[i], end="|")
+
+    '''for i in range(0,20):
+        print(memoria[i], end="|")
+    print()
+    for i in range(20,40):
+        print(memoria[i], end="|")
+    print()
+    for i in range(40,60):
+        print(memoria[i], end="|")
+    print()
+    for i in range(60,80):
+        print(memoria[i], end="|")
+    print()
+    for i in range(80,100):
+        print(memoria[i], end="|")
+    print()'''
